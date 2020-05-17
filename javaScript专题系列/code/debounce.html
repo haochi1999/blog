@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 100%;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            color: #fff;
+            background-color: #444;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+    <button id="cancel">点击取消的debounce</button>
+</body>
+<script>
+    let count = 1;
+    let container = document.getElementById('container');
+    function getUserMove(e) {
+        container.innerHTML = count++;
+        console.log(e);
+        return '我是返回值';
+    }
+
+    let setUserMove = debounce(getUserMove, 10000, true);
+
+    container.onmousemove = setUserMove;
+
+    document.getElementById('cancel').addEventListener('click', function () {
+        console.log('关闭debounce');
+        setUserMove.cancel();
+    });
+
+    // 第一版
+    // function debounce (fn,wait) {
+    //     let timer;
+    //     return function () {
+    //         clearTimeout(timer);
+    //         timer = setTimeout(fn,wait);
+    //     }
+    // }
+
+    // 第二版 this
+    // 正确了this的指向
+    // event对象
+    // function debounce (fn,wait) {
+    //     let timer;
+    //     return function () {
+    //         let context = this;
+    //         let args = arguments;
+    //         clearTimeout(timer);
+    //         timer = setTimeout(function(){
+    //             fn.apply(context,args);
+    //         },wait);
+    //     }
+    // }
+
+    // 第三版 
+    // 立即执行
+    // function debounce(fn, wait, immediate) {
+    //     let timer;
+    //     return function () {
+    //         let context = this;
+    //         let args = arguments;
+    //         if (timer) clearTimeout(timer);
+    //         if (immediate) {
+    //             var callNow = !timer;
+    //             timer = setTimeout(() => {
+    //                 timer = null;
+    //             }, wait);
+    //             if (callNow) fn.apply(context, args);
+    //         } else {
+    //             timer = setTimeout(function () {
+    //                 fn.apply(context, args);
+    //             }, wait);
+    //         }
+    //     }
+    // }
+
+    // 第四版 
+    // 返回值&停止debounce功能
+    function debounce(fn, wait, immediate) {
+        let timer, result;
+        let debounced = function () {
+            let context = this;
+            let args = arguments;
+            if (timer) clearTimeout(timer);
+            if (immediate) {
+                var callNow = !timer;
+                timer = setTimeout(() => {
+                    timer = null;
+                }, wait);
+                if (callNow) result = fn.apply(context, args);
+            } else {
+                timer = setTimeout(function () {
+                    fn.apply(context, args);
+                }, wait);
+            }
+            return result;
+        }
+
+        debounced.cancel = function () {
+            clearTimeout(timer);
+            timer = null;
+        }
+
+        return debounced;
+    }
+</script>
+
+</html>
