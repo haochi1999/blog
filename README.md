@@ -37,6 +37,27 @@
 
 + [记录点](./高级程序设计&权威指南/记录点.md)
 
+# TypeScript
+
+## 入门
+
+1. [简介](./TypeScript/1.简介.md)
+2. [原始数据类型](./TypeScript/2.原始数据类型.md)
+3. [类型推论&联合类型](./TypeScript/3.类型推论&联合类型.md)
+4. [接口(对象的类型)](./TypeScript/4.接口(对象的类型).md)
+5. [数组的类型](./TypeScript/5.数组的类型.md)
+6. [函数的类型](./TypeScript/6.函数的类型.md)
+7. [类型断言](./TypeScript/7.类型断言.md)
+
+# Vue
+
++ [风格指南](./vue/风格指南.md)
+
+## 源码阅读
+
++ [深入Vue.use](./vue/API/深入Vue.use.md)
++ [深入Vue.nextTick](./vue/API/深入Vue.nextTick.md)
+
 # 编程基础
 
 ## 数据结构与算法
