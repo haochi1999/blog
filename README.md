@@ -48,6 +48,9 @@
 5. [数组的类型](./TypeScript/5.数组的类型.md)
 6. [函数的类型](./TypeScript/6.函数的类型.md)
 7. [类型断言](./TypeScript/7.类型断言.md)
+8. [声明文件](./TypeScript/8.声明文件.md)
+9. [进阶1](./TypeScript/9.进阶1.md)
+10. [进阶2](./TypeScript/10.进阶2.md)
 
 # Vue
 
