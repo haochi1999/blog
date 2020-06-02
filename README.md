@@ -93,4 +93,5 @@
 >以下学习记录来自 《深入浅出NodeJS》
 
 1. [NodeJS简介](./NodeJS/深入浅出nodejs/1.md)
+2. [异步I/O](./NodeJS/深入浅出nodejs/2.异步IO.md)
 
