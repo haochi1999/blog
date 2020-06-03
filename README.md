@@ -30,6 +30,12 @@
 
 1. [跟着underscore学防抖](./javaScript专题系列/1.跟着underscore学防抖.md)
 2. [跟着underscore学节流](./javaScript专题系列/2.跟着underscore学节流.md)
+3. [数组去重](./javaScript专题系列/3.数组去重.md)
+4. [类型判断](./javaScript专题系列/4.类型判断.md)
+5. [深浅拷贝](./javaScript专题系列/5.深浅拷贝.md)
+6. [从零实现jq的extend](./javaScript专题系列/6.从零实现jq的extend.md)
+7. [数组最大值和最小值](./javaScript专题系列/7.数组最大值和最小值.md)
+8. [数组扁平化](./javaScript专题系列/8.数组扁平化.md)
 
 ## 高级程序设计&权威指南
 
