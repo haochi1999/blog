@@ -36,6 +36,8 @@
 6. [从零实现jq的extend](./javaScript专题系列/6.从零实现jq的extend.md)
 7. [数组最大值和最小值](./javaScript专题系列/7.数组最大值和最小值.md)
 8. [数组扁平化](./javaScript专题系列/8.数组扁平化.md)
+9. [在数组中查指定元素](./javaScript专题系列/9.在数组中查指定元素.md)
+10. [jq通用遍历的实现](./javaScript专题系列/10.jq通用遍历的实现.md)
 
 ## 高级程序设计&权威指南
 
