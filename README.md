@@ -47,6 +47,10 @@
 17. [递归](./javaScript专题系列/17.递归.md)
 18. [乱序](./javaScript专题系列/18.乱序.md)
 
+## ES6
+
+1. [let和const](./javaScript专题系列/ES6/1.let和const.md)
+
 ## 高级程序设计&权威指南
 
 >以下学习记录来自 《javaScript高级程序设计》、《javaScript权威指南》
