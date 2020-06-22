@@ -50,6 +50,10 @@
 ## ES6
 
 1. [let和const](./javaScript专题系列/ES6/1.let和const.md)
+2. [模板字符串](./javaScript专题系列/ES6/2.模板字符串.md)
+3. [箭头函数](./javaScript专题系列/ES6/3.箭头函数.md)
+4. [Symbol类型](./javaScript专题系列/ES6/4.Symbol类型.md)
+5. [迭代器与for of](./javaScript专题系列/ES6/5.迭代器与forof.md)
 
 ## 高级程序设计&权威指南
 
