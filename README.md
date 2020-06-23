@@ -54,6 +54,8 @@
 3. [箭头函数](./javaScript专题系列/ES6/3.箭头函数.md)
 4. [Symbol类型](./javaScript专题系列/ES6/4.Symbol类型.md)
 5. [迭代器与for of](./javaScript专题系列/ES6/5.迭代器与forof.md)
+6. [Set数据结构](./javaScript专题系列/ES6/6.Set数据结构.md)
+7. [WeakMap](./javaScript专题系列/ES6/7.WeakMap.md)
 
 ## 高级程序设计&权威指南
 
