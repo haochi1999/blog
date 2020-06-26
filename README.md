@@ -56,6 +56,7 @@
 5. [迭代器与for of](./javaScript专题系列/ES6/5.迭代器与forof.md)
 6. [Set数据结构](./javaScript专题系列/ES6/6.Set数据结构.md)
 7. [WeakMap](./javaScript专题系列/ES6/7.WeakMap.md)
+8. [Promise](./javaScript专题系列/ES6/8.Promise.md)
 
 ## 高级程序设计&权威指南
 
